@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:slnt,wght@-4,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+:root {
+    --primarycolour: rgb(238, 0, 255);
+}
+
+.heading {
+    background: linear-gradient(90deg, #116466 0%, #306b59 100%);
+    height: 20vh;
+    width: 100vw;
+    align-content: center;
+    justify-items: center;
+    color: #FFCB9A;
+    font-size: 3vh;
+    text-shadow: 0px 5px 10px #000000;
+    font-family: "Bitcount Prop Double", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" -4,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+}
+
+.mid {
+    height: 60vh;
+    width: 100vw;
+}
+
+.hand {
+    /* background-image: url(Gemini_Generated_Image_dy5vqddy5vqddy5v.png);
+    background-size: cover;
+    background-position: center; */
+    background: linear-gradient(90deg, #116466 0%, #306b59 100%);
+    z-index: -2;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    width: 300%;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 90%;
+}
+
+.msg {
+    background: linear-gradient(90deg, #116466 0%, #306b59 100%);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5vh;
+    color: #FFCB9A;
+    text-shadow: 0px 5px 10px #000000;
+    font-family: "Bitcount Prop Double", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" -4,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+}
+
+.you {
+    /* background-color: rgb(77, 70, 61); */
+    position: relative;
+    height: 40vh;
+    width: 40vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px 1px #ffcb9a98;
+}
+
+.you img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 40px;
+    box-shadow: 2px 2px 5px 1px #ffcb9a98;
+}
+
+.comp {
+    /* background-color: rgb(77, 70, 61); */
+    position: relative;
+    height: 40vh;
+    width: 40vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: -2px 2px 5px 1px #ffcb9a98;
+}
+
+.comp img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 40px;
+    box-shadow: -2px 2px 5px 1px #ffcb9a98;
+}
+
+.vs {
+    /* background-color: rgba(27, 149, 255, 0.732); */
+    position: relative;
+    height: 90%;
+    width: 25%;
+    align-content: center;
+    text-align: center;
+    font-size: 10vh;
+    font-weight: 500;
+    overflow: hidden;
+    background-color: black;
+    z-index: -1;
+    border: 1px solid #a3744a;
+    border-radius: 70px;
+    box-shadow: 0px 0px 20px 5px #ffcb9a;
+}
+
+
+.options {
+    background: linear-gradient(90deg, #116466 0%, #306b59 100%);
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", sans-serif;
+    font-weight: 400;
+}
+
+.rock {
+    background-color: bisque;
+    position: relative;
+    padding: 5vh 10vw;
+    cursor: pointer;
+}
+
+.paper {
+    background-color: bisque;
+    position: relative;
+    padding: 5vh 10vw;
+    cursor: pointer;
+}
+
+.scissors {
+    background-color: bisque;
+    position: relative;
+    padding: 5vh 10vw;
+    cursor: pointer;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out 3;
+}
+
+.btn {
+    width: 250px;
+    height: 80px;
+    background: linear-gradient(90deg, #a3744a 0%, #FFCB9A 100%);
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #000000;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 500ms ease;
+    box-shadow: 0 4px 6px -1px hsla(0, 0%, 0%, 0.1),
+        0 2px 4px -2px hsla(0, 0%, 0%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #FFCB9A 0%, #a3744a 100%);
+    transform: scale(105%);
+}
+
+
+/* scorecard */
+
+.scorecard {
+    /* background-color: #a3744a; */
+    background: linear-gradient(90deg, #a3744a -20%, #FFCB9A 100%);
+    height: 20vh;
+    width: 20vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    overflow: scroll;
+    scrollbar-width: none;
+    border: 3px solid #FFCB9A;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.yourscore {
+    padding-top: 10px;
+    position: relative;
+    height: 20%;
+    width: 100%;
+    /* background-color: #116466; */
+    font-size: 3vh;
+    font-weight: 500;
+    color: #000000;
+    text-shadow: 0px 0px 1px #000000;
+    -webkit-text-stroke: 1px #000000;
+    padding-left: 2vw;
+}
+
+.compscore {
+    position: relative;
+    height: 20%;
+    width: 100%;
+    /* background-color: #116466; */
+    font-size: 3vh;
+    font-weight: 500;
+    color: #000000;
+    text-shadow: 0px 0px 1px #000000;
+    -webkit-text-stroke: 1px #000000;
+    padding-left: 2vw;
+}
+
+.resetbutton {
+    background: linear-gradient(90deg, #116466 0%, #306b59 100%);
+    padding: 5px 20px;
+    border: 3px solid #FFCB9A;
+    border-radius: 20px;
+    color: #FFCB9A;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 100ms ease;
+    font-family: "Press Start 2P", sans-serif;
+    font-weight: 400;
+}
+
+.resetbutton:hover {
+    transform: scale(105%);
+    background: #a3744a;
+    color: #ffffff;
+}
