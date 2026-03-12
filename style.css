@@ -300,4 +300,5 @@ body {
     transform: scale(105%);
     background: #a3744a;
     color: #ffffff;
+    cursor: pointer;
 }
